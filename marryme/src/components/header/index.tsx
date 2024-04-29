@@ -1,10 +1,12 @@
 import './header.css'
 import logo from '../../assets/img/logo.png'
+import carrossel1 from '../../assets/img/ carossel1.png'
 
 export function Header() {
     return (
         <>
             <div className='carrossel'>
+                
                 <header>
                     <div className='header-container'>
 
@@ -17,9 +19,6 @@ export function Header() {
                             <button>Presentes</button>
                             <button>Local</button>
                         </nav>
-
-
-
 
                     </div>
                 </header>
