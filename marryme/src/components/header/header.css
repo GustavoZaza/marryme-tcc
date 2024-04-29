@@ -1,0 +1,40 @@
+.carrossel{
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url(../../assets/img/carossel1.png);
+    
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: black;
+}
+
+.header-container-logo{
+    width: 150px;
+    margin-left: 30px;
+}
+
+nav{
+    /* background-color: red; */
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+button{
+    height: 40px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Great Vibes';
+}
+
+button:hover{
+    cursor: pointer;
+}
