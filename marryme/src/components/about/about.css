@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.about{
+    width: 100%;
+}
+
+.about-title{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.about-title>h1{
+    font-family: 'Great Vibes', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 10px 0px -20px 0px;
+}
+
+.bride{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bride-img{
+    height: 50px;
+    width: 50px;
+}

@@ -1,19 +1,7 @@
-.carrossel{
-    height: 100vh;
-    /* background-color: red; */
-    background-image: url(../../assets/img/carrossel1.png); 
-}
-
-.bg-img{
-    height: 100vh;
-    width: 100vw;
-}
-
 .header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
     background-color: transparent;
 }
 
@@ -23,11 +11,13 @@
 }
 
 header{
-    background-color: transparent;
+    width: 100%;
+    /* background-color: red;  */
 }
 
 nav{
-    /* background-color: red; */
+    margin-top: 15px;
+
     width: 800px;
     display: flex;
     justify-content: space-around;
