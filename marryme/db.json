@@ -1,0 +1,44 @@
+{
+  "gifts": [
+    {
+      "id": "1",
+      "name": "Geladeira Eletrolux",
+      "price": "3.500"
+    },
+    {
+      "id": "2",
+      "name": "Smart TV Samsung 55 Polegadas",
+      "price": "5.500"
+    },
+    {
+      "id": "3",
+      "name": "Panela de Pressão Elétrica",
+      "price": "500"
+    },
+    {
+      "id": "4",
+      "name": "Conjunto de Talheres Inox",
+      "price": "300"
+    },
+    {
+      "id": "5",
+      "name": "Forno Elétrico Britânia",
+      "price": "432"
+    },
+    {
+      "id": "6",
+      "name": "Jogo de Toalhas",
+      "price": "240"
+    },
+    {
+      "id": "7",
+      "name": "Cafeteira Expresso",
+      "price": "620"
+    },
+    {
+      "id": "8",
+      "name": "Aspirador de Pó",
+      "price": "250"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.gift{
+    margin-top: 150px;
+}
+
+.gift-title{
+    /* height: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift-title>h1{
+    font-family: 'Great Vibes', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+}
