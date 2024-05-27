@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import './card.css'
+import '../../global.css'
 
 interface Gift {
     id: number;
@@ -42,13 +44,24 @@ export function Card({} : {gift: Gift}){
 }
 
 function GiftCard({ gift }: { gift: Gift }) {
+    const formatPriceToBRL = (price: number) => {
+        return 'R$ '+ price.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+        });
+    };
+
     return (
         <>
         
-        <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '5px' }}>
-            <h3>{gift.name}</h3>
-            <img src={gift.image} alt={gift.name} style={{ maxWidth: '100%', height: 'auto' }} />
-            <p>Preço: ${gift.price}</p>
+        <div className="card">
+            <div className="card-image">
+                <img src={gift.image} alt={gift.name}/>
+            </div>
+            <div className="card-text">
+                <h3>{gift.name}</h3>
+                <p>Preço: {formatPriceToBRL(gift.price)}</p>
+            </div>
         </div>
         
         </>

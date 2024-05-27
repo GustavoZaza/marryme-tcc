@@ -34,19 +34,19 @@
       "id": "6",
       "name": "Jogo de Toalhas",
       "price": "240",
-      "image": "./src/assets/img/"
+      "image": "./src/assets/img/toalhas.png"
     },
     {
       "id": "7",
       "name": "Cafeteira Expresso",
       "price": "620",
-      "image": "./src/assets/img/"
+      "image": "./src/assets/img/cafeteira.png"
     },
     {
       "id": "8",
       "name": "Aspirador de Pó",
       "price": "250",
-      "image": "./src/assets/img/"
+      "image": "./src/assets/img/aspirador.png"
     }
   ]
 }
