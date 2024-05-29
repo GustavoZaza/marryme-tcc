@@ -1,5 +1,10 @@
 .gift{
     margin-top: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 240, 243); */
 }
 
 .gift-title{
@@ -13,4 +18,23 @@
     font-family: 'Great Vibes', Arial, sans-serif;
     font-weight: 500;
     font-size: 55px;
+}
+
+.gift-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.gift-list{
+    width: 80%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 45px;
 }

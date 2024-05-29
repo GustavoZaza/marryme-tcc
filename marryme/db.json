@@ -8,7 +8,7 @@
     },
     {
       "id": "2",
-      "name": "Smart TV Samsung 55 Polegadas",
+      "name": "Smart TV 55 Polegadas",
       "price": "5.500",
       "image": "./src/assets/img/tv.png"
     },
@@ -26,8 +26,8 @@
     },
     {
       "id": "5",
-      "name": "Forno Elétrico Britânia",
-      "price": "432",
+      "name": "Forno Elétrico",
+      "price": "1.899",
       "image": "./src/assets/img/forno.png"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "8",
       "name": "Aspirador de Pó",
-      "price": "250",
+      "price": "350",
       "image": "./src/assets/img/aspirador.png"
     }
   ]

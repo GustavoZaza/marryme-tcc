@@ -9,7 +9,7 @@ interface Gift {
     image: string
 }
 
-export function Card({} : {gift: Gift}){
+export function Card(){
 
     const [ gifts, setGifts] = useState<Gift[]>([]);
 
@@ -35,7 +35,7 @@ export function Card({} : {gift: Gift}){
         <>
         {gifts.map((gift) => (
             <>  
-            <GiftCard key={gift.id} gift={gift} />-
+            <GiftCard key={gift.id} gift={gift} />
             </>
             ))}
             
@@ -59,8 +59,8 @@ function GiftCard({ gift }: { gift: Gift }) {
                 <img src={gift.image} alt={gift.name}/>
             </div>
             <div className="card-text">
-                <h3>{gift.name}</h3>
-                <p>Preço: {formatPriceToBRL(gift.price)}</p>
+                <h1>{gift.name}</h1>
+                <h3>Preço: {formatPriceToBRL(gift.price)}</h3>
             </div>
         </div>
         

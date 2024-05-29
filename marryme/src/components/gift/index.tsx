@@ -7,11 +7,13 @@ export function Gift() {
 
         <div className="gift">
             
-            <div className="gift-title">
-                <h1>Presentes</h1>
-            </div>
             <div className="gift-content">
-                <Card />
+                <div className="gift-title">
+                    <h1>Presentes</h1>
+                </div>
+                <div className="gift-list">
+                    <Card />
+                </div>
             </div>
         </div>
     )
