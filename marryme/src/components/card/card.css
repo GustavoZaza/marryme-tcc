@@ -1,29 +1,34 @@
 .card{
-    height: 400px;
-    width: 300px;
-    /* border: solid rgb(80, 80, 80) 1px; */
-    border-radius: 15px;
+    height: 350px;
+    width: 350px;
+    border: 0.5px solid rgb(201, 201, 201);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 15px;  */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    transition: 0.5s;
 }
 
 .card:hover{
     box-shadow: 14px 14px 13px -1px rgba(212,212,212,1);
+    transform: translateY(-10px);
+    background: linear-gradient(to bottom, #f7ede8, #fcebe3);
     transition: 0.5s;
+
 }
 
 .card-image{
     display: flex;
     align-items: center;
     justify-content: center ;
-    height: 300px;
+    height: 200px;
 }
 
 .card-image>img{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .card-text{
@@ -31,7 +36,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
@@ -45,4 +50,66 @@
     font-size: 18px;
     font-weight: 400;
     font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Animação Button  */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #868686;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #f7eaa2, #fff6a5,#fffeac,#fff48d,#fcee6c,#fadd37,#fffb12,#fff27a,#fff8bb);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #b9b9b9;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }

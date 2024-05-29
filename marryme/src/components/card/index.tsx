@@ -62,6 +62,9 @@ function GiftCard({ gift }: { gift: Gift }) {
                 <h1>{gift.name}</h1>
                 <h3>Preço: {formatPriceToBRL(gift.price)}</h3>
             </div>
+            <div className="card-button">
+                <button className="glow-on-hover" type="button">Comprar</button>
+            </div>
         </div>
         
         </>

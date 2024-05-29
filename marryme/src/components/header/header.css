@@ -24,7 +24,7 @@ nav{
     margin-right: 30px;
 }
 
-button{
+nav>button{
     height: 40px;
     font-size: 30px;
     background-color: transparent;

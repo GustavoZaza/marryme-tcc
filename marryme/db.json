@@ -47,6 +47,12 @@
       "name": "Aspirador de Pó",
       "price": "350",
       "image": "./src/assets/img/aspirador.png"
+    },
+    {
+      "id": "9",
+      "name": "Máquina de Lavar Roupas",
+      "price": "2.800",
+      "image": "./src/assets/img/maquina-lavar.png"
     }
   ]
 }
