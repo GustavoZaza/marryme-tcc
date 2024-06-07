@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './card.css'
 import '../../global.css'
+import axios from "axios";
 
 interface Gift {
     id: number;
@@ -11,36 +12,25 @@ interface Gift {
 
 export function Card(){
 
-    const [ gifts, setGifts] = useState<Gift[]>([]);
+    const [gifts, setGifts] = useState<Gift[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:3333/gifts', {
-            method : 'GET',
-            headers: {
-                'Content-Type' : 'application/json',
-            },
-        })
-        .then((resp) => resp.json())
-        .then((data: Gift[]) => {
-            setGifts(data);
-        })
-        .catch((error) => {
-            console.error('Erro ao buscar presentes:', error);
-        });
-    }, [])
+        axios.get('http://localhost:3333/gifts')
+            .then((response) => {
+                setGifts(response.data);
+            })
+            .catch((error) => {
+                console.error('Erro ao buscar presentes:', error);
+            });
+    }, []);
 
-    
-
-    return(
+    return (
         <>
-        {gifts.map((gift) => (
-            <>  
-            <GiftCard key={gift.id} gift={gift} />
-            </>
+            {gifts.map((gift) => (
+                <GiftCard key={gift.id} gift={gift} />
             ))}
-            
         </>
-    )
+    );
 }
 
 function GiftCard({ gift }: { gift: Gift }) {
@@ -63,7 +53,7 @@ function GiftCard({ gift }: { gift: Gift }) {
                 <h3>Preço: {formatPriceToBRL(gift.price)}</h3>
             </div>
             <div className="card-button">
-                <button className="glow-on-hover" type="button">Comprar</button>
+                <button type="button">Comprar</button>
             </div>
         </div>
         

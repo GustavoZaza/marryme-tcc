@@ -11,7 +11,7 @@ export function Carrossel(){
             </header>
             
             <div className="carrossel-title">
-                <h1>Yasmin & Bruno</h1>
+                <h1>Yasmin e Bruno</h1>
             </div>
 
         </div>
