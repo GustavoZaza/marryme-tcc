@@ -1,0 +1,8 @@
+.message{
+        height: 1800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: url(../../assets/img/menssagem.png) no-repeat center/cover; 
+    
+}
